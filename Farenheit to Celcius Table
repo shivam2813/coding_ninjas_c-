@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+    int S,E,W,C;
+    cin>>S>>E>>W;
+    if(S>=0 && S<=90 && S<=E && E<=900 && 0<=W && W<=80)
+    {
+    	while(S<=E)
+    	{
+       		C=(S-32)*(5.0/9);
+        	cout<<S<<" "<<C<<endl;;
+            S=S+W;
+    	}
+    }
+    return 0;
+}
+
+
